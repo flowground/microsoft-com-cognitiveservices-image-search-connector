@@ -1,0 +1,87 @@
+{
+    "title": "Image Search Client",
+    "description": "The Image Search API lets you send a search query to Bing and get back a list of relevant images. This section provides technical details about the query parameters and headers that you use to request images and the JSON response objects that contain them. For examples that show how to make requests, see [Searching the Web for Images](https://docs.microsoft.com/azure/cognitive-services/bing-image-search/search-the-web).",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/microsoft.com/cognitiveservices-ImageSearch/1.0/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://api.cognitive.microsoft.com/bing/v7.0",
+                    "{Endpoint}",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            },
+            "apiKeyHeader": {
+                "label": "Ocp-Apim-Subscription-Key (apiKeyHeader)",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "Images_Details": {
+            "main": "./lib/actions/Images_Details.js",
+            "title": "The Image Detail Search API lets you search on Bing and get back insights about an image, such as webpages that include the image. This section provides technical details about the query parameters and headers that you use to request insights of images and the JSON response objects that contain them. For examples that show how to make requests, see [Searching the Web for Images](https://docs.microsoft.com/azure/cognitive-services/bing-image-search/search-the-web).",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Images_Details.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Images_Search": {
+            "main": "./lib/actions/Images_Search.js",
+            "title": "The Image Search API lets you send a search query to Bing and get back a list of relevant images. This section provides technical details about the query parameters and headers that you use to request images and the JSON response objects that contain them. For examples that show how to make requests, see [Searching the Web for Images](https://docs.microsoft.com/azure/cognitive-services/bing-image-search/search-the-web).",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Images_Search.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Images_Trending": {
+            "main": "./lib/actions/Images_Trending.js",
+            "title": "The Image Trending Search API lets you search on Bing and get back a list of images that are trending based on search requests made by others. The images are broken out into different categories. For example, Popular People Searches. For a list of markets that support trending images, see [Trending Images](https://docs.microsoft.com/en-us/azure/cognitive-services/bing-image-search/trending-images).",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Images_Trending.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

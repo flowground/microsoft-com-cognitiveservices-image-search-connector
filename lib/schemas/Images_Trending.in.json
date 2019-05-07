@@ -1,0 +1,57 @@
+{
+    "type": "object",
+    "properties": {
+        "Accept": {
+            "required": false,
+            "type": "string"
+        },
+        "cc": {
+            "required": false,
+            "type": "string"
+        },
+        "mkt": {
+            "required": false,
+            "type": "string"
+        },
+        "safeSearch": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Off",
+                "Moderate",
+                "Strict"
+            ]
+        },
+        "setLang": {
+            "required": false,
+            "type": "string"
+        },
+        "X_BingApis_SDK": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "true"
+            ]
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        },
+        "User_Agent": {
+            "required": false,
+            "type": "string"
+        },
+        "X_MSEdge_ClientID": {
+            "required": false,
+            "type": "string"
+        },
+        "X_MSEdge_ClientIP": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Search_Location": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

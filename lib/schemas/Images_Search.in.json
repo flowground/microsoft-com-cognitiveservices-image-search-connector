@@ -1,0 +1,198 @@
+{
+    "type": "object",
+    "properties": {
+        "Accept": {
+            "required": false,
+            "type": "string"
+        },
+        "aspect": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "All",
+                "Square",
+                "Wide",
+                "Tall"
+            ]
+        },
+        "color": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "ColorOnly",
+                "Monochrome",
+                "Black",
+                "Blue",
+                "Brown",
+                "Gray",
+                "Green",
+                "Orange",
+                "Pink",
+                "Purple",
+                "Red",
+                "Teal",
+                "White",
+                "Yellow"
+            ]
+        },
+        "cc": {
+            "required": false,
+            "type": "string"
+        },
+        "count": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "freshness": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Day",
+                "Week",
+                "Month"
+            ]
+        },
+        "height": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "id": {
+            "required": false,
+            "type": "string"
+        },
+        "imageContent": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Face",
+                "Portrait"
+            ]
+        },
+        "imageType": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "AnimatedGif",
+                "Clipart",
+                "Line",
+                "Photo",
+                "Shopping",
+                "Transparent"
+            ]
+        },
+        "license": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "All",
+                "Any",
+                "Public",
+                "Share",
+                "ShareCommercially",
+                "Modify",
+                "ModifyCommercially"
+            ]
+        },
+        "mkt": {
+            "required": false,
+            "type": "string"
+        },
+        "maxFileSize": {
+            "required": false,
+            "type": "integer",
+            "format": "int64"
+        },
+        "maxHeight": {
+            "required": false,
+            "type": "integer",
+            "format": "int64"
+        },
+        "maxWidth": {
+            "required": false,
+            "type": "integer",
+            "format": "int64"
+        },
+        "minFileSize": {
+            "required": false,
+            "type": "integer",
+            "format": "int64"
+        },
+        "minHeight": {
+            "required": false,
+            "type": "integer",
+            "format": "int64"
+        },
+        "minWidth": {
+            "required": false,
+            "type": "integer",
+            "format": "int64"
+        },
+        "offset": {
+            "required": false,
+            "type": "integer",
+            "format": "int64"
+        },
+        "q": {
+            "required": true,
+            "type": "string"
+        },
+        "safeSearch": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Off",
+                "Moderate",
+                "Strict"
+            ]
+        },
+        "size": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "All",
+                "Small",
+                "Medium",
+                "Large",
+                "Wallpaper"
+            ]
+        },
+        "setLang": {
+            "required": false,
+            "type": "string"
+        },
+        "width": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "X_BingApis_SDK": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "true"
+            ]
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        },
+        "User_Agent": {
+            "required": false,
+            "type": "string"
+        },
+        "X_MSEdge_ClientID": {
+            "required": false,
+            "type": "string"
+        },
+        "X_MSEdge_ClientIP": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Search_Location": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}
